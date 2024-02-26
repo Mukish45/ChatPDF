@@ -10,9 +10,7 @@ from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationalRetrievalChain
 from langchain.chat_models import ChatOpenAI
 from htmlTemplates import css, bot_template, user_template
-import os
 
-os.environ['OPENAI_API_KEY'] = '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'
 # creating custom template to guide llm model
 custom_template = """Given the following conversation and a follow up question, rephrase the follow up question to be a standalone question, in its original language.
 Chat History:
